@@ -70,19 +70,32 @@ This project provides a REST API to upload a `.csv` file containing arithmetic o
   }
 
 ##  Example Workflow
-### **1. `Generate a token: Use /api/token/ to get your access and refresh tokens.`**
-### **2. `Make a request: Send a .csv file to /api/compute/ with the Authorization: Bearer <access_token> header.`**
-### **3. `Refresh your token: Use /api/token/refresh/ when your access token expires to obtain a new one.`**
+**1. `Generate a token:`**
+**Use /api/token/ to get your access and refresh tokens.**
+**2. `Make a request:`**
+**Send a .csv file to /api/compute/ with the Authorization: Bearer <access_token> header.**
+**3. `Refresh your token:`**
+**Use /api/token/refresh/ when your access token expires to obtain a new one.**
 
 ##  Setup Instructions
 ### **1. `Clone the repository:`**
-**git clone <repository_url>**
-**cd <project_directory>**
+```bash
+    git clone <repository_url>
+    cd <project_directory>
+```
 ### **2. `Install dependencies:`**
-**pip install -r requirements.txt**
+```bash
+    pip install -r requirements.txt
+```
 ### **3. `Apply migrations:`**
-**python manage.py migrate**
+```bash
+    python manage.py migrate
+```
 ### **4. `Start the development server:`**
-**python manage.py runserver**
+```bash
+    python manage.py runserver
+```
 ### **5. `Create a superuser for authentication:`**
-**python manage.py createsuperuser**
+```bash
+    python manage.py createsuperuser
+```
